@@ -34,7 +34,7 @@
     <div class="gex_5">
       <img src="images/main_pages/gexagon_4.png" width="270px" />
     </div>
-    <!-- <div class="information">
+    <div class="information">
       <div class="logo">
         <img src="images/main_pages/logo.png" width="350px" />
       </div>
@@ -110,8 +110,8 @@
       <div class="promotion">
         <img src="images/main_pages/promotion.png" width="150px" />
       </div>
-    </div> -->
-    <!-- <div class="profession">
+    </div>
+    <div class="profession">
       <div class="text_8">
         <h>Для регистрации представлены <br /> три типа аккаунта:</h> <br />
         <svg width="480" height="80" class="but_inf">
@@ -142,7 +142,7 @@
           <img src="images/main_pages/cat_businessmen.png" width="100px" />
         </div>
       </div>
-    </div> -->
+    </div>
   </div>
   <div class="sign">
     <div class="sign_1">
@@ -175,14 +175,13 @@
     </div>
   </div>
   <div class="sign_window">
-
     <svg width="100%" height="100%" viewBox="0 0 50 170" class="svg_sign_window" preserveAspectRatio="none">
       <polygon points="0.5 5, 5 0.5, 44.5 0.5, 49.5 4.5, 49.5 164.5,  44.5 169.5, 5 169.5, 0.5 164.5" />
     </svg>
     <div class="sign_elements_design">
       <div class="sign_elements">
         <div class="modal_header">
-          <p>Выберите типа аккаунта:</p>
+          <p>Выберите тип аккаунта:</p>
         </div>
         <div class="modal_type_accaunt">
           <div class="individual">
@@ -203,10 +202,13 @@
           <svg style="height:38px;" class="svg_company_name">
             <polygon points="55 10, 65 3, 275 3, 285 10, 285 28,  275 35, 65 35, 55 28" />
           </svg>
-          <input type="text" class="input_company_name" id="company_name" value placeholder="Название организации"/>
+          <input type="text" class="input_company_name" id="company_name" value placeholder="Название организации" />
         </div>
         <!-- <div class="full_name">
           <p>ФИО</p>
+          <svg style="height:38px;" class="svg_full_name">
+            <polygon points="55 10, 65 3, 275 3, 285 10, 285 28,  275 35, 65 35, 55 28" />
+          </svg>
           <input type="text" class="input_full_name" id="full_name" value placeholder="ФИО"/>
         </div> -->
         <div class="date">
@@ -216,77 +218,100 @@
               <div class="selector sel_dd">
                 <table class="selector_table_dd">
                   <tbody>
+                    <svg style="height:37px; width: 106px" class="svg_dd">
+                      <polygon points="2 10, 9 2, 96 2, 103 10, 103 25, 96 32, 9 32, 2 25" />
+                    </svg>
                     <tr>
                       <td class="selector_dd">
-                        <input type="text" class="selector_input selected" />
+                        <input type="text" class="selector_input_dd selected" value placeholder="День" readonly="true" />
                       </td>
-                      <td class="selector dd_dropdown">
+                      <td class="selector_td dd_dropdown">
                         <i class="fa fa-angle-down"></i>
                       </td>
                     </tr>
                   </tbody>
                 </table>
+                <svg style="height:215px; width: 106px" class="svg_cont_dd">
+                  <polygon points="2 10, 9 2, 96 2, 103 10, 103 205, 96 212, 9 212, 2 205" />
+                </svg>
                 <div class="results_container dd_container">
-                  <ul class="list_dd">
-                    <li>День</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-                    <li>11</li>
-                    <li>12</li>
-                    <li>13</li>
-                    <li>14</li>
-                    <li>15</li>
-                    <li>16</li>
-                    <li>17</li>
-                    <li>18</li>
-                    <li>19</li>
-                    <li>20</li>
-                    <li>21</li>
-                    <li>22</li>
-                    <li>23</li>
-                    <li>24</li>
-                    <li>25</li>
-                    <li>26</li>
-                    <li>27</li>
-                    <li>28</li>
-                    <li>29</li>
-                    <li>30</li>
-                    <li>31</li>
-                  </ul>
+                  <ul class="list_dd"></ul>
                 </div>
               </div>
             </div>
-            <!-- <input type="text" class="input_date_dd" id="date_day"/>
-            <input type="text" class="input_date_mm" id="date_month"/>
-            <input type="text" class="input_date_yyyy" id="date_years"/> -->
-            <!-- <svg width="100%" height="500" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject x="10" y="10" width="100" height="150">
-      <div xmlns="http://www.w3.org/1999/xhtml">
-      <input></input>
+            <div class="mm">
+              <div class="selector sel_mm">
+                <table class="selector_table_mm">
+                  <tbody>
+                    <svg style="height:37px; width: 106px" class="svg_mm">
+                      <polygon points="2 10, 9 2, 96 2, 103 10, 103 25, 96 32, 9 32, 2 25" />
+                    </svg>
+                    <tr>
+                      <td class="selector_mm">
+                        <input type="text" class="selector_input_mm selected" value placeholder="Месяц" />
+                      </td>
+                      <td class="selector_td mm_dropdown">
+                        <i class="fa fa-angle-down"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <svg style="height:215px; width: 106px" class="svg_cont_mm">
+                  <polygon points="2 10, 9 2, 96 2, 103 10, 103 205, 96 212, 9 212, 2 205" />
+                </svg>
+                <div class="results_container mm_container">
+                  <ul class="list_mm"></ul>
+                </div>
+              </div>
+            </div>
+            <div class="yyyy">
+              <div class="selector sel_yyyy">
+                <table class="selector_table_yyyy">
+                  <tbody>
+                    <svg style="height:37px; width: 106px" class="svg_yyyy">
+                      <polygon points="2 10, 9 2, 96 2, 103 10, 103 25, 96 32, 9 32, 2 25" />
+                    </svg>
+                    <tr>
+                      <td class="selector_yyyy">
+                        <input type="text" class="selector_input_yyyy selected" value placeholder="Год" />
+                      </td>
+                      <td class="selector_td yyyy_dropdown">
+                        <i class="fa fa-angle-down"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <svg style="height:215px; width: 106px" class="svg_cont_yyyy">
+                  <polygon points="2 10, 9 2, 96 2, 103 10, 103 205, 96 212, 9 212, 2 205" />
+                </svg>
+                <div class="results_container yyyy_container">
+                  <ul class="list_yyyy"></ul>
+                </div>
+              </div>
+            </div>
           </div>
-  </foreignObject>
-</svg> -->
-          </div>
+
         </div>
         <div class="login">
           <p>Номер мобильного телефона или эл.адрес</p>
-          <input type="text" class="input_login" id="login"/>
+          <svg style="height:38px; width:363px" class="svg_login" >
+            <polygon points="30 10, 40 3, 330 3, 340 10, 340 28, 330 35, 40 35, 30 28" />
+          </svg>
+          <input type="text" class="input_login" id="login" value placeholder="Логин"/>
         </div>
         <div class="password">
           <p>Пароль</p>
-          <input type="text" class="input_password" id="password"/>
+          <svg style="height:38px; width:363px" class="svg_password" >
+            <polygon points="30 10, 40 3, 330 3, 340 10, 340 28, 330 35, 40 35, 30 28" />
+          </svg>
+          <input type="text" class="input_password" id="password" value placeholder="Пароль"/>
         </div>
         <div class="repeat_password">
           <p>Повторите пароль</p>
-          <input type="text" class="input_repeat_password" id="repeat_password"/>
+          <svg style="height:38px; width:363px" class="svg_repeat_password" >
+            <polygon points="30 10, 40 3, 330 3, 340 10, 340 28, 330 35, 40 35, 30 28" />
+          </svg>
+          <input type="text" class="input_repeat_password" id="repeat_password" value placeholder="Повторите пароль"/>
         </div>
         <div class="button_sign_up">
           Зарегистрироваться
@@ -295,6 +320,18 @@
     </div>
 
   </div>
+
 </body>
 
 </html>
+
+<!-- <input type="text" class="input_date_dd" id="date_day"/>
+<input type="text" class="input_date_mm" id="date_month"/>
+<input type="text" class="input_date_yyyy" id="date_years"/> -->
+<!-- <svg width="100%" height="500" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="10" y="10" width="100" height="150">
+<div xmlns="http://www.w3.org/1999/xhtml">
+<input></input>
+</div>
+</foreignObject>
+</svg> -->

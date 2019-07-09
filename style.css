@@ -335,8 +335,9 @@ body, .bg, .contents {
   background: rgb(50, 50, 50);
   /* background: rgb(90, 90, 90); */
   height: 100%;
-  width: 339px;
-  right: 0px;
+  width: 370px;
+  right: 0;
+  top: 0;
 }
 .modal_type_accaunt {
   display: grid;
@@ -351,13 +352,51 @@ body, .bg, .contents {
   fill-rule: evenodd;
   position: absolute;
 }
-.svg_company_name {
+.svg_full_name, .svg_company_name, .svg_dd, .svg_mm, .svg_yyyy,
+.svg_cont_mm, .svg_cont_dd, .svg_login, .svg_password, .svg_repeat_password {
   fill: none;
   stroke: #0e94ff;
   stroke-width: 3;
   fill-rule: evenodd;
   position: absolute;
+}
+
+.svg_company_name {
   top: 215px;
+  right: 55px;
+}
+.svg_full_name {
+  top: 274px;
+}
+.svg_dd {
+  top: 283px;
+}
+
+.svg_mm {
+  top: 283px;
+}
+
+.svg_yyyy {
+  top: 283px;
+}
+.svg_cont_yyyy, .svg_cont_mm, .svg_cont_dd {
+  /* position: fixed; */
+  display: none;
+  top: 317px;
+  z-index: 100;
+  background: rgb(50, 50, 50);
+}
+
+.svg_login {
+  top:367px;
+}
+
+.svg_password {
+  top: 427px;
+}
+
+.svg_repeat_password {
+  top: 487px;
 }
 
 .sign_window p {
@@ -373,7 +412,7 @@ body, .bg, .contents {
   outline-offset: 0;
   font-size: 15px;
   position: relative;
-  /* background: rgb(50, 50, 50); */
+  background: rgb(50, 50, 50);
 }
 
 .modal_type_accaunt p {
@@ -392,9 +431,9 @@ body, .bg, .contents {
 .sign_elements_design {
   overflow: auto;
   position: relative;
-  height: 100%;
+  height: calc(100% - 30px);
 }
-.input_company_name, .input_login, .input_password, .input_repeat_password {
+.input_company_name, .input_login, .input_password, .input_repeat_password, .input_full_name{
   margin: 0 auto;
   display: block;
   width: 200px;
@@ -404,7 +443,7 @@ body, .bg, .contents {
 }
 .ddmmyyyy input {
   width: 60px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .input_login, .input_password, .input_repeat_password{
   width: 280px;
@@ -414,25 +453,52 @@ body, .bg, .contents {
   margin-left: 25%;
   margin-top: 40px;
 }
-.list_dd li {
+.list_dd li, .list_mm li, .list_yyyy li{
   list-style-type: none;
   text-align: center;
+  font-size: 15px;
 }
-.list_dd {
+.list_dd, .list_mm, .list_yyyy{
   padding: 0;
   margin: 0;
 }
-.dd_container {
+
+.dd_container, .mm_container ,.yyyy_container {
   color: black;
-  right: 228px;
   z-index: 100;
   position: absolute;
   background: white;
-  width: 62px;
   height: 200px;
   overflow: auto;
   display: none;
 }
+.dd_container {
+  right: 249px;
+  width: 82px;
+  margin-top: 10px;
+}
+.mm_container {
+  right: 141px;
+  width: 82px;
+  margin-top: 10px;
+}
+.yyyy_container {
+  right: 33px;
+  margin-top: 10px;
+  width: 82px;
+}
 ::-webkit-scrollbar {
-display: none;
+  display: none;
+}
+
+.day_el_hover, .month_el_hover, .years_el_hover{
+  background: red;
+}
+
+.ddmmyyyy {
+  display: grid;
+  grid-template-columns: 108px 108px 108px;
+}
+.selector_td {
+  position: relative;
 }
