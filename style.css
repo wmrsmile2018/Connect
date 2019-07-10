@@ -349,7 +349,7 @@ body, .bg, .contents {
   background-size: 51% 50%;
   background-repeat: no-repeat;
 
-  right: -370px;
+  right: -400px;
   /* opacity: 0; */
   transition: all 0.5s ease-in-out;
 }
@@ -463,7 +463,7 @@ body, .bg, .contents {
   /* top: 3%; */
   height: 587px;
 }
-.sign_elements_design_company {
+.sign_elements_design {
   top:30px;
   overflow: auto;
   position: relative;
@@ -567,4 +567,46 @@ body, .bg, .contents {
 
 .selector_input_mm {
   width: 69px!important;
+}
+
+.close_sign_window {
+  right: 342px;
+  position: absolute;
+  top: calc(50% - 30px);
+  font-size: 60px!important;
+  color: #0e94ff;
+  z-index: 200;
+}
+.close_sign_window:hover {
+  color: white!important;
+}
+/* .sign_color_block1 {
+  clip: rect(0px, auto, auto, 8px);
+  height: 35px;
+  right: 342px;
+  width: 17px;
+  border-radius: 0 37px 36px 0;
+  border: 7px #0e94ff solid;
+  background: rgb(90, 90, 90);
+  position: absolute;
+  top: calc(50% - 25px);
+} */
+/* .sign_color_block2 {
+  background: rgb(90, 90, 90);
+  height: 44px;
+  position: absolute;
+  width: 8px;
+  right: 362px;
+  top: calc(50% - 22px);
+} */
+
+.sign_color_block1 {
+  height: 37px;
+  right: 342px;
+  width: 37px;
+  border-radius: 36px 36px 36px 36px;
+  border: 7px #0e94ff solid;
+  background: rgb(90, 90, 90);
+  position: absolute;
+  top: calc(50% - 26px);
 }

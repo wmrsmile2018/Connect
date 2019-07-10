@@ -37,7 +37,7 @@ $(function() {
   }
 
   function sign_but_2 () {
-    if ($(window).scrollTop() >= 44 && flag_sign == 0) {
+    if ($(window).scrollTop() >= 44 && flag_sign == 0 && flag_modal_sign == 0) {
       flag_sign = 1;
       $(".sign_2").toggleClass("open");
       return 1;
@@ -149,10 +149,19 @@ $(function() {
       div.has(e.target).length === 0 && flag_modal_sign == 1) {
       flag_modal_sign = 0;
       div.toggleClass("open");
-      if($(window).scrollTop() >= 44) {
+      if($(window).scrollTop() >= 44 && flag_sign == 0) {
         flag_sign = 1;
         $(".sign_2").toggleClass("open");
       }
+    }
+  });
+
+  $(".close_sign_window").click((e) => {
+    flag_modal_sign = 0;
+    $(".sign_window").toggleClass("open");
+    if($(window).scrollTop() >= 44 && flag_sign == 0) {
+      flag_sign = 1;
+      $(".sign_2").toggleClass("open");
     }
   });
 
