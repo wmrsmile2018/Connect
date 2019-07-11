@@ -3,6 +3,8 @@ var flag_dd = 0;
 var flag_mm = 0;
 var flag_yyyy = 0;
 var flag_modal_sign = 0;
+var flag_type = 0;
+
 var month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
 $(function() {
 
@@ -36,7 +38,7 @@ $(function() {
     }
   }
 
-  function sign_but_2 () {
+  function sign_but_2() {
     if ($(window).scrollTop() >= 44 && flag_sign == 0 && flag_modal_sign == 0) {
       flag_sign = 1;
       $(".sign_2").toggleClass("open");
@@ -45,6 +47,22 @@ $(function() {
       flag_sign = 0;
       $(".sign_2").toggleClass("open");
       return 0;
+    }
+  }
+
+  function choose_type() {
+    if(flag_type == 1) {
+      $(".sign_type_individual").show();
+      $(".sign_type_individual_entrepreneur").hide();
+      $(".sign_type_company").hide();
+    } else if(flag_type == 2) {
+      $(".sign_type_individual").hide();
+      $(".sign_type_individual_entrepreneur").show();
+      $(".sign_type_company").hide();
+    } else if(flag_type == 3) {
+      $(".sign_type_individual").hide();
+      $(".sign_type_individual_entrepreneur").hide();
+      $(".sign_type_company").show();
     }
   }
 
@@ -143,6 +161,64 @@ $(function() {
     }
   });
 
+
+  $(".svg_individual").mouseover((e) => {
+    if($(".svg_individual").css("stroke") != "rgb(14, 148, 255)") {
+      $(".svg_individual").css("stroke", "#aedbff");
+    }
+  });
+  $(".svg_individual").mouseout((e) => {
+    if($(".svg_individual").css("stroke") != "rgb(14, 148, 255)") {
+      $(".svg_individual").css("stroke", "none");
+    }
+  });
+
+  $(".svg_individual_entrepreneur").mouseover((e) => {
+    if($(".svg_individual_entrepreneur").css("stroke") != "rgb(14, 148, 255)") {
+      $(".svg_individual_entrepreneur").css("stroke", "aedbff");
+    }
+  });
+  $(".svg_individual_entrepreneur").mouseout((e) => {
+    if($(".svg_individual_entrepreneur").css("stroke") != "rgb(14, 148, 255)") {
+      $(".svg_individual_entrepreneur").css("stroke", "none");
+    }
+  });
+
+  $(".svg_company").mouseover((e) => {
+    if($(".svg_company").css("stroke") != "rgb(14, 148, 255)") {
+      $(".svg_company").css("stroke", "#aedbff");
+    }
+  });
+  $(".svg_company").mouseout((e) => {
+    if($(".svg_company").css("stroke") != "rgb(14, 148, 255)") {
+      $(".svg_company").css("stroke", "none");
+    }
+  });
+
+  $(".svg_individual").click((e) => {
+    flag_type = 1;
+    $(".svg_individual").css("stroke", "#0e94ff");
+    $(".svg_individual_entrepreneur").css("stroke", "none");
+    $(".svg_company").css("stroke", "none");
+    choose_type()
+  });
+
+  $(".svg_individual_entrepreneur").click((e) => {
+    flag_type = 2;
+    $(".svg_individual").css("stroke", "none");
+    $(".svg_individual_entrepreneur").css("stroke", "#0e94ff");
+    $(".svg_company").css("stroke", "none");
+    choose_type()
+  });
+
+  $(".svg_company").click((e) =>{
+    flag_type = 3;
+    $(".svg_individual").css("stroke", "none");
+    $(".svg_individual_entrepreneur").css("stroke", "none");
+    $(".svg_company").css("stroke", "#0e94ff");
+    choose_type()
+  });
+
   $(document).mouseup(function(e) {
     var div = $(".sign_window");
     if (!div.is(e.target) &&
@@ -172,12 +248,14 @@ $(function() {
       flag_mm = 0;
       $(".dd_container").show();
       $(".svg_cont_dd").show();
+      $(".svg_cont_dd_ind").show();
     } else {
       flag_yyyy = 0;
       flag_dd = 0;
       flag_mm = 0;
       $(".dd_container").hide();
       $(".svg_cont_dd").hide();
+      $(".svg_cont_dd_ind").hide();
     }
   });
 
@@ -187,6 +265,7 @@ $(function() {
       div.has(e.target).length === 0) {
       div.hide();
       $(".svg_cont_dd").hide();
+      $(".svg_cont_dd_ind").hide();
     }
   });
 
@@ -204,6 +283,7 @@ $(function() {
     }
     $(".dd_container").hide();
     $(".svg_cont_dd").hide();
+    $(".svg_cont_dd_ind").hide();
   });
 
   $(".selector_table_mm").click((e) => {
@@ -213,12 +293,14 @@ $(function() {
       flag_dd = 0;
       $(".mm_container").show();
       $(".svg_cont_mm").show();
+      $(".svg_cont_mm_ind").show();
     } else {
       flag_yyyy = 0;
       flag_dd = 0;
       flag_mm = 0;
       $(".mm_container").hide();
       $(".svg_cont_mm").hide();
+      $(".svg_cont_mm_ind").hide();
     }
   });
 
@@ -228,6 +310,7 @@ $(function() {
       div.has(e.target).length === 0) {
       div.hide();
       $(".svg_cont_mm").hide();
+      $(".svg_cont_mm_ind").hide();
     }
   });
 
@@ -245,6 +328,7 @@ $(function() {
     }
     $(".mm_container").hide();
     $(".svg_cont_mm").hide();
+    $(".svg_cont_mm_ind").hide();
   });
 
   $(".selector_table_yyyy").click((e) => {
@@ -254,12 +338,14 @@ $(function() {
       flag_mm = 0;
       $(".yyyy_container").show();
       $(".svg_cont_yyyy").show();
+      $(".svg_cont_yyyy_ind").show();
     } else {
       flag_yyyy = 0;
       flag_dd = 0;
       flag_mm = 0;
       $(".yyyy_container").hide();
       $(".svg_cont_yyyy").hide();
+      $(".svg_cont_yyyy_ind").hide();
     }
   });
 
@@ -269,6 +355,7 @@ $(function() {
       div.has(e.target).length === 0) {
       div.hide();
       $(".svg_cont_yyyy").hide();
+      $(".svg_cont_yyyy_ind").hide();
     }
 
   });
@@ -286,6 +373,7 @@ $(function() {
       $(".selector_input_yyyy").val("");
     }
     $(".yyyy_container").hide();
+    $(".svg_cont_yyyy_ind").hide();
     $(".svg_cont_yyyy").hide();
   });
 });
