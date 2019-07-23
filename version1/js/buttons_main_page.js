@@ -51,15 +51,15 @@ $(function() {
   }
 
   function choose_type() {
-    if(flag_type == 1) {
+    if (flag_type == 1) {
       $(".sign_type_individual").show();
       $(".sign_type_individual_entrepreneur").hide();
       $(".sign_type_company").hide();
-    } else if(flag_type == 2) {
+    } else if (flag_type == 2) {
       $(".sign_type_individual").hide();
       $(".sign_type_individual_entrepreneur").show();
       $(".sign_type_company").hide();
-    } else if(flag_type == 3) {
+    } else if (flag_type == 3) {
       $(".sign_type_individual").hide();
       $(".sign_type_individual_entrepreneur").hide();
       $(".sign_type_company").show();
@@ -148,49 +148,48 @@ $(function() {
     var h1 = $(".h_sign_up_1");
     var h2 = $(".h_sign_up_2");
 
-    if(((svg1.is(e.target) || svg2.is(e.target)) ||
+    if (((svg1.is(e.target) || svg2.is(e.target)) ||
         (pol1.is(e.target) || pol2.is(e.target)) ||
-        (h1.is(e.target) || h2.is(e.target)) && flag_modal_sign == 0) ) {
+        (h1.is(e.target) || h2.is(e.target)) && flag_modal_sign == 0)) {
       console.log("hello1");
       flag_modal_sign = 1;
       $(".sign_window").toggleClass("open");
-      if($(window).scrollTop() >= 44) {
+      if ($(window).scrollTop() >= 44) {
         flag_sign = 0;
         $(".sign_2").toggleClass("open");
       }
     }
   });
 
-
   $(".svg_individual").mouseover((e) => {
-    if($(".svg_individual").css("stroke") != "rgb(14, 148, 255)") {
+    if ($(".svg_individual").css("stroke") != "rgb(14, 148, 255)") {
       $(".svg_individual").css("stroke", "#aedbff");
     }
   });
   $(".svg_individual").mouseout((e) => {
-    if($(".svg_individual").css("stroke") != "rgb(14, 148, 255)") {
+    if ($(".svg_individual").css("stroke") != "rgb(14, 148, 255)") {
       $(".svg_individual").css("stroke", "none");
     }
   });
 
   $(".svg_individual_entrepreneur").mouseover((e) => {
-    if($(".svg_individual_entrepreneur").css("stroke") != "rgb(14, 148, 255)") {
+    if ($(".svg_individual_entrepreneur").css("stroke") != "rgb(14, 148, 255)") {
       $(".svg_individual_entrepreneur").css("stroke", "aedbff");
     }
   });
   $(".svg_individual_entrepreneur").mouseout((e) => {
-    if($(".svg_individual_entrepreneur").css("stroke") != "rgb(14, 148, 255)") {
+    if ($(".svg_individual_entrepreneur").css("stroke") != "rgb(14, 148, 255)") {
       $(".svg_individual_entrepreneur").css("stroke", "none");
     }
   });
 
   $(".svg_company").mouseover((e) => {
-    if($(".svg_company").css("stroke") != "rgb(14, 148, 255)") {
+    if ($(".svg_company").css("stroke") != "rgb(14, 148, 255)") {
       $(".svg_company").css("stroke", "#aedbff");
     }
   });
   $(".svg_company").mouseout((e) => {
-    if($(".svg_company").css("stroke") != "rgb(14, 148, 255)") {
+    if ($(".svg_company").css("stroke") != "rgb(14, 148, 255)") {
       $(".svg_company").css("stroke", "none");
     }
   });
@@ -211,7 +210,7 @@ $(function() {
     choose_type()
   });
 
-  $(".svg_company").click((e) =>{
+  $(".svg_company").click((e) => {
     flag_type = 3;
     $(".svg_individual").css("stroke", "none");
     $(".svg_individual_entrepreneur").css("stroke", "none");
@@ -225,7 +224,7 @@ $(function() {
       div.has(e.target).length === 0 && flag_modal_sign == 1) {
       flag_modal_sign = 0;
       div.toggleClass("open");
-      if($(window).scrollTop() >= 44 && flag_sign == 0) {
+      if ($(window).scrollTop() >= 44 && flag_sign == 0) {
         flag_sign = 1;
         $(".sign_2").toggleClass("open");
       }
@@ -235,7 +234,7 @@ $(function() {
   $(".close_sign_window").click((e) => {
     flag_modal_sign = 0;
     $(".sign_window").toggleClass("open");
-    if($(window).scrollTop() >= 44 && flag_sign == 0) {
+    if ($(window).scrollTop() >= 44 && flag_sign == 0) {
       flag_sign = 1;
       $(".sign_2").toggleClass("open");
     }
@@ -274,6 +273,7 @@ $(function() {
   }, function() {
     $(this).removeClass("day_el_hover");
   });
+
   $(".day_el").click((e) => {
     var index = $(e.currentTarget).data("index");
     if (index) {
@@ -319,6 +319,7 @@ $(function() {
   }, function() {
     $(this).removeClass("month_el_hover");
   });
+
   $(".month_el").click((e) => {
     var index = $(e.currentTarget).data("index");
     if (index) {
@@ -365,6 +366,7 @@ $(function() {
   }, function() {
     $(this).removeClass("years_el_hover");
   });
+
   $(".years_el").click((e) => {
     var index = $(e.currentTarget).data("index");
     if (index) {

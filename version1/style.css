@@ -29,7 +29,7 @@ body, .bg, .contents {
   /* color: #ffffffa3; */
 }
 
-.right_gex , .sign {
+.right_gex, .sign {
   position: relative;
   min-width: 1280px;
 }
@@ -41,17 +41,19 @@ body, .bg, .contents {
 }
 
 .sign_2 {
-  right:-51px;
+  right: -60px;
   opacity: 0;
   position: fixed;
   top: calc(50% - 300px);
   transition: all 0.5s ease-in-out;
 }
+
 .sign_2.open {
   top: calc(50% - 300px);
   right: 0%;
   opacity: 1;
 }
+
 .sign_1 {
   position: absolute;
   right: calc(50% - 550px);
@@ -95,7 +97,7 @@ body, .bg, .contents {
 }
 
 .text_2 {
-  margin-left: _20px;
+  margin-left: -20px;
   position: absolute;
   top: 235px;
   text-align: center;
@@ -327,7 +329,7 @@ body, .bg, .contents {
   top: 8px;
   font-size: 19px;
   right: 8.5%;
-  margin-left:10px;
+  margin-left: 10px;
 }
 
 .sign_window {
@@ -339,16 +341,14 @@ body, .bg, .contents {
   width: 370px;
   right: 0;
   top: 0;
-
   background: #58a;
   background:
-  linear-gradient(144deg, transparent 23px, rgb(90, 90, 90) 0) top left,
-  linear-gradient(-150deg, transparent 23px, rgb(90, 90, 90) 0) top right,
-  linear-gradient(-36deg, transparent 25px, rgb(90, 90, 90) 0) bottom right,
-  linear-gradient(40deg, transparent 26px, rgb(90, 90, 90) 0) bottom left;
+    linear-gradient(144deg, transparent 23px, rgb(90, 90, 90) 0) top left,
+    linear-gradient(-150deg, transparent 23px, rgb(90, 90, 90) 0) top right,
+    linear-gradient(-36deg, transparent 25px, rgb(90, 90, 90) 0) bottom right,
+    linear-gradient(40deg, transparent 26px, rgb(90, 90, 90) 0) bottom left;
   background-size: 51% 51%;
   background-repeat: no-repeat;
-
   right: -400px;
   /* opacity: 0; */
   transition: all 0.5s ease-in-out;
@@ -358,20 +358,6 @@ body, .bg, .contents {
   right: 0px;
   opacity: 1px;
 }
-
-/* .sign_2 {
-  right:-51px;
-  opacity: 0;
-  position: fixed;
-  top: calc(50% - 300px);
-  transition: all 0.5s ease-in-out;
-}
-.sign_2.open {
-  top: calc(50% - 300px);
-  right: 0%;
-  opacity: 1;
-} */
-
 
 .modal_type_accaunt {
   display: grid;
@@ -386,6 +372,7 @@ body, .bg, .contents {
   fill-rule: evenodd;
   position: absolute;
 }
+
 .svg_full_name, .svg_company_name, .svg_dd, .svg_mm, .svg_yyyy,
 .svg_dd_ind, .svg_mm_ind, .svg_yyyy_ind, .svg_cont_mm, .svg_cont_dd,
 .svg_cont_yyyy, .svg_cont_yyyy_ind, .svg_cont_mm_ind, .svg_cont_dd_ind,
@@ -409,7 +396,6 @@ body, .bg, .contents {
 /* .svg_individual:hover, .svg_individual_entrepreneur:hover, .svg_company:hover {
   stroke: #0e94ff;
 } */
-
 .svg_individual {
   right: 240px;
 }
@@ -450,9 +436,11 @@ body, .bg, .contents {
 .svg_full_name {
   top: 282px;
 }
+
 .svg_dd, .svg_mm, .svg_yyyy {
   top: 291px;
 }
+
 .svg_dd_ind, .svg_mm_ind, .svg_yyyy_ind {
   top: 441px;
 }
@@ -475,8 +463,9 @@ body, .bg, .contents {
 }
 
 .svg_login {
-  top:382px;
+  top: 382px;
 }
+
 .svg_login_ind {
   width: 320px;
   right: 25px;
@@ -492,12 +481,15 @@ body, .bg, .contents {
   width: 320px;
   right: 25px;
 }
+
 .svg_repeat_password {
   top: 516px;
 }
+
 .svg_repeat_password_ind {
   top: 672px;
 }
+
 .sign_window p {
   text-align: center;
   font-size: 17px;
@@ -514,33 +506,39 @@ body, .bg, .contents {
   /* background: rgb(50, 50, 50); */
   background: rgb(90, 90, 90);
 }
+
 .sign_window input::placeholder {
   /* color: rgb(90, 90, 90); */
 }
 
-.modal_header p{
+.modal_header p {
   font-size: 23px;
 }
+
 .modal_type_accaunt p {
   font-size: 10px;
   text-align: center;
 }
+
 .modal_type_accaunt img {
   margin: 25px auto;
   display: block;
 }
+
 .sign_elements {
   position: absolute;
   /* top: 3%; */
   height: 587px;
   width: 370px;
 }
+
 .sign_elements_design {
-  top:30px;
+  top: 30px;
   overflow: auto;
   position: relative;
   height: calc(100% - 60px);
 }
+
 .input_company_name, .input_login, .input_login_ind, .input_password,
 .input_password_ind, .input_repeat_password, .input_repeat_password_ind,
 .input_full_name, .input_individual_entrepreneur_name {
@@ -560,7 +558,7 @@ body, .bg, .contents {
 }
 
 .surname p, .patronymic p, .date_individual,
-.password_ind p, .repeat_password_ind p{
+.password_ind p, .repeat_password_ind p {
   margin-top: 15px;
   margin-bottom: 12px;
 }
@@ -576,6 +574,7 @@ body, .bg, .contents {
 .ddmmyyyy, .ddmmyyyy_ind {
   padding-left: 20px;
 }
+
 .ddmmyyyy input, .ddmmyyyy_ind input {
   width: 60px;
   margin-left: 10px;
@@ -599,17 +598,18 @@ body, .bg, .contents {
   width: 280px;
 }
 
-
 .button_sign_up_ind, .button_sign_up_comp, .button_sign_up_ind_ent {
   margin-left: 25%;
   margin-top: 40px;
 }
-.list_dd li, .list_mm li, .list_yyyy li{
+
+.list_dd li, .list_mm li, .list_yyyy li {
   list-style-type: none;
   text-align: center;
   font-size: 15px;
 }
-.list_dd, .list_mm, .list_yyyy{
+
+.list_dd, .list_mm, .list_yyyy {
   padding: 0;
   margin: 0;
   /* background: rgb(50, 50, 50); */
@@ -617,7 +617,7 @@ body, .bg, .contents {
   color: white;
 }
 
-.dd_container, .mm_container ,.yyyy_container {
+.dd_container, .mm_container, .yyyy_container {
   color: black;
   z-index: 100;
   position: absolute;
@@ -626,26 +626,30 @@ body, .bg, .contents {
   overflow: auto;
   display: none;
 }
+
 .dd_container {
   right: 255px;
   width: 82px;
   margin-top: 10px;
 }
+
 .mm_container {
   right: 147px;
   width: 82px;
   margin-top: 10px;
 }
+
 .yyyy_container {
   right: 33px;
   margin-top: 10px;
   width: 82px;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
 
-.day_el_hover, .month_el_hover, .years_el_hover{
+.day_el_hover, .month_el_hover, .years_el_hover {
   background: red;
 }
 
@@ -653,25 +657,28 @@ body, .bg, .contents {
   display: grid;
   grid-template-columns: 108px 117px 108px;
 }
+
 .selector_td {
   position: relative;
 }
 
 .selector_input_mm {
-  width: 69px!important;
+  width: 69px !important;
 }
 
 .close_sign_window {
   right: 342px;
   position: absolute;
   top: calc(50% - 30px);
-  font-size: 60px!important;
+  font-size: 60px !important;
   color: #0e94ff;
   z-index: 200;
 }
+
 .close_sign_window:hover {
-  color: #aedbff!important;
+  color: #aedbff !important;
 }
+
 /* .sign_color_block1 {
   clip: rect(0px, auto, auto, 8px);
   height: 35px;
@@ -691,7 +698,6 @@ body, .bg, .contents {
   right: 362px;
   top: calc(50% - 22px);
 } */
-
 .sign_color_block1 {
   height: 37px;
   right: 342px;
@@ -706,13 +712,14 @@ body, .bg, .contents {
 /* .sign_type_individual_entrepreneur, .sign_type_company, .sign_type_individual {
   display: none;
 } */
-
 .sign_type_individual_entrepreneur {
   display: none;
 }
+
 .sign_type_company {
   display: none;
 }
+
 .sign_type_individual {
   display: none;
 }
