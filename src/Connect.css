@@ -1,3 +1,18 @@
+.root, .App {
+  height: 100%;
+  width: 100%;
+}
+
+.Wall {
+  position: absolute;
+  background: black;
+  width: 500px;
+  height: calc(100% - 450px);
+  top: 450px;
+  left: calc(50% - 250px);
+}
+
+
 /* .App {
   text-align: center;
 }

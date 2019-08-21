@@ -1,11 +1,13 @@
 import React from 'react';
 import './Connect.css';
-import Circle from './main_pages/Circle';
+import Circle from './main_pages/Circle/Circle';
+import Wall from './main_pages/Users_wall/Wall';
 
 const Connect = () => {
   return (
     <div className="App">
       <Circle/>
+      <Wall />
     </div>
   );
 }
