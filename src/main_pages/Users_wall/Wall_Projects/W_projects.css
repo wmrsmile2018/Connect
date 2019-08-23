@@ -1,0 +1,65 @@
+.W_projects img {
+  width: 246px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.projects0, .projects1 {
+  position: relative;
+  margin-bottom: 18px;
+  height: 200px;
+  width: 246px;
+}
+
+.projects0 {
+  float: left;
+}
+
+.projects1 {
+  float: right;
+}
+
+.W_projects {
+  overflow: auto;
+}
+
+.footerProject {
+  border-radius: 10px;
+  display: inline;
+  position: absolute;
+  left: 0px;
+  background: rgba(255, 255, 255, 0.35);
+  width: 246px;
+  bottom: 0px;
+  height: 50px;
+}
+
+.wrap_footerProject {
+  position: relative;
+}
+
+.projectName {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 20px;
+}
+
+.author {
+  position: absolute;
+  top: 26px;
+  left: 10px;
+  font-size: 15px;
+}
+
+.date {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 10px
+}
+
+.footerProject p {
+  margin: 0px;
+  color: white;
+}
