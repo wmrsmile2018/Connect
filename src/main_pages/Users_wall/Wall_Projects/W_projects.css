@@ -9,9 +9,6 @@
   margin-bottom: 18px;
   height: 200px;
   width: 246px;
-}
-
-.projects0 {
   float: left;
 }
 
@@ -20,7 +17,7 @@
 }
 
 .W_projects {
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .footerProject {

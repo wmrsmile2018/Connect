@@ -1,8 +1,29 @@
 .Wall {
+  height: 100%;
+  width: 100%;
+}
+.void_place {
   position: absolute;
-  background: black;
+  /* height: 460px; */
+  width: 500px;
+  height: 500px;
+  margin-left: calc(50% - 250px);
+  z-index: 9;
+  background: #EDF3F8;
+  /* background: black; */
+  border-radius: 0px 0px 400px 400px;
+  margin-top: -113px;
+}
+.wrap2_Wall {
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  overflow: scroll
+}
+.wrap1_Wall {
+  /* background: black; */
   width: 500px;
   height: calc(100% - 528px);
-  top: 460px;
-  left: calc(50% - 250px);
+  margin-top: 460px;
+  margin-left: calc(50% - 250px);
 }

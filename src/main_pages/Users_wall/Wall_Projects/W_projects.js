@@ -12,6 +12,15 @@ let projects = [
   {projectsClass: "project1" ,imgClass: "img1"},
   {projectsClass: "project2" ,imgClass: "img2"},
   {projectsClass: "project3" ,imgClass: "img3"},
+  {projectsClass: "project1" ,imgClass: "img1"},
+  {projectsClass: "project2" ,imgClass: "img2"},
+  {projectsClass: "project3" ,imgClass: "img3"},
+  {projectsClass: "project1" ,imgClass: "img1"},
+  {projectsClass: "project2" ,imgClass: "img2"},
+  {projectsClass: "project3" ,imgClass: "img3"},
+  {projectsClass: "project1" ,imgClass: "img1"},
+  {projectsClass: "project2" ,imgClass: "img2"},
+  {projectsClass: "project3" ,imgClass: "img3"},
   {projectsClass: "project4" ,imgClass: "img4"}
 ]
 
