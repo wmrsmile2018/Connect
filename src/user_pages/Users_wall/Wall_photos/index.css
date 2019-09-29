@@ -1,0 +1,21 @@
+.w_photos_img, .w_photos0, .w_photos1, .w_photos2 {
+  width: 164px;
+  height: 130px;
+  border-radius: 10px;
+}
+
+.w_photos0 {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.w_photos1 {
+  float: left;
+  margin-left: 4px;
+  margin-bottom: 10px;
+}
+
+.w_photos2 {
+  float: right;
+  margin-bottom: 10px;
+}

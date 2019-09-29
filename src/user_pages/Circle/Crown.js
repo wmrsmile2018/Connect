@@ -20,11 +20,11 @@ const crown_elements = [
 ]
 
 const Crown_buttons = crown_elements.map((crown_element) =>
-  <div className={crown_element.div_name}>
+  <div key={crown_element.objectID} className={crown_element.div_name}>
     <svg
       viewBox="0 0 40 40"
       xmlns="http://www.w3.org/2000/svg"
-      class={crown_element.svg_circles_name + " " + crown_element.svg_circle_name}>
+      className={crown_element.svg_circles_name + " " + crown_element.svg_circle_name}>
       <circle cx="20" cy="20" r="20"/>
     </svg>
     <img

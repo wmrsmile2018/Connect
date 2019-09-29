@@ -1,0 +1,95 @@
+.Chat_friends {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.circle {
+  position: relative;
+}
+
+.svg_circle {
+  width: 500px;
+}
+
+.svg_smallCircle {
+  width: 400px;
+  height: 80px;
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 200px);
+}
+
+.ChFr_Wall {
+  height: calc(100% - 144px - 20px);
+  width: 550px;
+  background: white;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.cfFr_types {
+  position: relative;
+  margin-left: 20px;
+}
+
+.svg_cfFr_type1, .svg_cfFr_type2 {
+  width: 50px;
+  position: absolute;
+  top: -25px;
+  fill: white;
+  z-index: 1;
+}
+
+.svg_cfFr_type2 {
+  fill: #A8BED6;
+  left: 30px;
+  z-index: 0;
+}
+
+.fr_avatar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.fr_img_avatar {
+  position: absolute;
+  left: 0px;
+  width: 80px;
+  margin-left: -35px;
+}
+
+.users {
+  padding-top: 30px;
+  margin-left: 50px;
+  margin-right: 25px;
+  height: 95px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.fr_text_field {
+  position: absolute;
+  top: 35px;
+  left: 60px;
+}
+
+.fr_text_field p {
+  margin-bottom: 5px;
+}
+
+.fr_delete {
+  position: absolute;
+  right: 0px;
+  top: 30px;
+}
+
+.fr_svg_delete {
+  width: 25px;
+}

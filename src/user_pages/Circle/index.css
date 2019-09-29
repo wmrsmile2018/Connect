@@ -1,0 +1,351 @@
+.Circle {
+  position: relative;
+  margin: 0px auto;
+  width: 503px;
+  height: 462px;
+  z-index: 2;
+  margin-top: -25px;
+  margin-bottom: 40px;
+}
+
+.Circle_wrap2 {
+  position: relative;
+  width: 503px;
+  height: 440px;
+}
+
+.Circle_wrap1 {
+  height: 440px;
+  width: 503px;
+  position: relative;
+}
+
+.Circle_wrap1.fix {
+  position: fixed;
+  top: -405px;
+}
+
+.Big_circle {
+  position: absolute;
+  top: -40px;
+  width: 503px;
+}
+
+.svg_big_circle {
+  width: 503px;
+  fill: white;
+}
+
+.Medium_circle {
+  position: absolute;
+  left: calc(50% - 353px / 2);
+  top: calc(50% - 350px / 2 - 10px);
+  width: 350px;
+}
+
+.svg_medium_circle {
+  width: 350px;
+  fill: #DDE8F3;
+}
+
+.Crown {
+  position: absolute;
+  top: 65px;
+  left: 65px;
+}
+
+.img_crown {
+  width: 170px;
+}
+
+.crown_buttons {
+  position: absolute;
+  top: 0px;
+  z-index: 11;
+}
+
+.crown_svg {
+  position: absolute;
+  width: 23px;
+  fill: white;
+}
+
+.crown_img {
+  position: absolute;
+  /* width:  */
+}
+
+.svg_crown_circle_name1 {
+  top: 11px;
+  left: 125px;
+}
+
+.img_crown_element_name1 {
+  top: 17px;
+  left: 130px;
+  width: 13px;
+}
+
+.svg_crown_circle_name2 {
+  top: 7px;
+  left: 95px;
+}
+
+.img_crown_element_name2 {
+  top: 13px;
+  left: 100.5px;
+  height: 12px;
+}
+
+.svg_crown_circle_name3 {
+  top: 13px;
+  left: 65px;
+}
+
+.img_crown_element_name3 {
+  top: 16px;
+  left: 72px;
+  height: 15px;
+}
+
+.svg_crown_circle_name4 {
+  top: 29px;
+  left: 39px;
+}
+
+.img_crown_element_name4 {
+  top: 34px;
+  left: 45px;
+  width: 12px;
+}
+
+.svg_crown_circle_name5 {
+  top: 53px;
+  left: 19px;
+}
+
+.img_crown_element_name5 {
+  top: 57px;
+  left: 25px;
+  height: 14px;
+}
+
+.svg_crown_circle_name6 {
+  top: 82px;
+  left: 9px;
+}
+
+.img_crown_element_name6 {
+  top: 86px;
+  left: 16px;
+  height: 15px;
+}
+
+.Small_circle {
+  position: absolute;
+  z-index: 9;
+  top: calc(50% - 150px / 2 - 11px);
+  left: calc(50% - 150px / 2);
+}
+
+.img_contour {
+  width: 150px;
+}
+
+.avatar {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+}
+
+.img_avatar {
+  width: 98px;
+  height: 98px;
+  border-radius: 75px;
+}
+
+.tools {
+  position: absolute;
+  fill: #A8BED6;
+  top: 307px;
+  height: 185px;
+  width: 500px;
+  z-index: 10;
+}
+
+.tools_svg {
+  width: 66px;
+  position: absolute;
+  fill: #A8BED6;
+}
+
+.img_tools {
+  position: absolute;
+  width: 35px;
+}
+
+.svg_tools_circle_name1 {
+  top: 0;
+  left: 25px;
+}
+
+.img_tools_element_name1 {
+  top: calc(263px - 244px);
+  left: 40px;
+}
+
+.svg_tools_circle_name2 {
+  top: calc(308px - 244px);
+  left: 70px;
+}
+
+.img_tools_element_name2 {
+  top: calc(325px - 244px);
+  left: 85px;
+}
+
+.svg_tools_circle_name3 {
+  top: calc(350px - 242px);
+  left: 138px;
+}
+
+.img_tools_element_name3 {
+  top: calc(365px - 243px);
+  left: 152px;
+}
+
+.svg_tools_circle_name4 {
+  top: calc(365px - 242px);
+  left: calc(50% - 66px / 2);
+}
+
+.img_tools_element_name4 {
+  top: calc(380px - 240px);
+  left: 235px;
+  width: 30px;
+}
+
+.svg_tools_circle_name5 {
+  top: calc(350px - 242px);
+  left: 297px;
+}
+
+.img_tools_element_name5 {
+  top: calc(362px - 241px);
+  left: 313px;
+}
+
+.svg_tools_circle_name6 {
+  top: calc(308px - 243px);
+  left: 366px;
+}
+
+.img_tools_element_name6 {
+  top: calc(322px - 241px);
+  left: 382px;
+}
+
+.svg_tools_circle_name7 {
+  top: 0px;
+  left: 412px;
+}
+
+.img_tools_element_name7 {
+  width: 30px;
+  top: calc(257px - 242px);
+  left: 430px;
+}
+
+.void_place {
+  position: absolute;
+  /* height: 460px; */
+  width: 504px;
+  height: 500px;
+  left: calc(50% - 252px);
+  z-index: 9;
+  background: #EDF3F8;
+  /* background: black; */
+  border-radius: 0px 0px 400px 400px;
+  top: -62px;
+}
+
+.div_svg_medium_circle {
+  position: absolute;
+}
+
+.Users_tools  {
+  position: relative;
+}
+
+.svg_user_tools {
+  position: absolute;
+  width: 30px;
+  fill: #C4C4C4;
+}
+
+.img_user_tools {
+  position: absolute;
+}
+
+.svg_user_tools_marker {
+  top: 20px;
+  left: 60px;
+}
+
+.img_user_tools_marker {
+  top: 25px;
+  left: 67.7px;
+  width: 15px;
+}
+
+.svg_user_tools_info {
+  top: 154px;
+  left: -13px;
+}
+
+.img_user_tools_info {
+  height: 15px;
+  top: 163px;
+  left: -7px;
+}
+
+.svg_user_tools_settings {
+  top: 50px;
+  left: 292px;
+}
+
+.img_user_tools_settings {
+  top: 55px;
+  left: 296.9px;
+  width: 20px;
+}
+
+.svg_user_tools_statics {
+  left: 332px;
+  top: 180px;
+}
+
+.img_user_tools_statics {
+  left: 339.7px;
+  top: 183px;
+  width: 15px;
+}
+
+.img_tale {
+  width: 50px;
+  left: calc(50% - 25px);
+  /* top: -25px; */
+  position: fixed;
+  z-index: 11;
+}
+
+.Tale {
+  opacity: 0;
+  margin-top: -50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.Tale.show {
+  opacity: 1;
+  margin-top: -30px;
+}
