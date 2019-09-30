@@ -1,25 +1,20 @@
 import React from 'react';
 import './Connect.css';
-import Circle from './user_pages/Circle/index';
-import Wall from './user_pages/Users_wall/index';
+
+import { Route } from 'react-router-dom';
 
 import Chats_friend from './chats_friends/index'
-
-const User_pages = () => {
-  return (
-    <div className="main_pages">
-      <Circle/>
-      <Wall />
-    </div>
-  );
-}
-
-
+import User_pages from './user_pages/index';
 
 const Connect = () => {
   return (
     <div className="App">
-      <Chats_friend/>
+      <switch>
+        <Route exact path ="/"/>
+        <Route path="/test" component={User_pages}/>
+        <Route path="/partners" component={Chats_friend}/>
+        <Route path="/chat" component={Chats_friend}/>
+      </switch>
     </div>
   );
 }

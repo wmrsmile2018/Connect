@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Friends from './Friends/index';
+import { Route } from 'react-router-dom'
 
 const ChFr_Wall = () => {
   return (
@@ -19,7 +20,10 @@ const ChFr_Wall = () => {
           </div>
         </div>
         <div>
-          <Friends/>
+          <switch>
+            <Route path="/chat" component={Friends}/>
+            <Route path="/partners" component={Friends}/>
+          </switch>
         </div>
       </div>
     </div>
