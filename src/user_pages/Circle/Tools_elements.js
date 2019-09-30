@@ -21,7 +21,7 @@ const tools_elements = [
 
 const Tools_buttons = tools_elements.map((tools_element) =>
   <Link to={"/test" + tools_element.link}>
-    <div key={tools_element.objectID} className={tools_element.div_name}>
+    <div className={tools_element.div_name}>
       <svg
         viewBox="0 0 40 40"
         xmlns="http://www.w3.org/2000/svg"

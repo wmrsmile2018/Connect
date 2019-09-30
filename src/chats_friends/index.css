@@ -3,17 +3,33 @@
   height: 100%;
 }
 
-.header {
+.chFr_header {
   margin: 0 auto;
   width: 500px;
+  z-index: 15;
 }
 
-.circle {
+.wrap1_chFr_header {
+  position:fixed;
+  z-index: 15;
+}
+
+.chFr_circle {
   position: relative;
+  z-index: 15;
+}
+
+.chFr_tools {
+  position: absolute;
+  top: 4px;
+  width: 500px;
+  height: 143px;
+  z-index: 16;
 }
 
 .svg_circle {
   width: 500px;
+  z-index: 15;
 }
 
 .svg_smallCircle {
@@ -22,6 +38,7 @@
   position: absolute;
   top: 0px;
   left: calc(50% - 200px);
+  z-index: 15;
 }
 
 .ChFr_Wall {
@@ -31,6 +48,10 @@
   margin: 0 auto;
   border-radius: 20px;
   margin-top: 20px;
+}
+
+.chFr_wall_wrap1 {
+  padding-top: 144px;
 }
 
 .cfFr_types {
@@ -43,13 +64,13 @@
   position: absolute;
   top: -25px;
   fill: white;
-  z-index: 1;
+  z-index: 10;
 }
 
 .svg_cfFr_type2 {
   fill: #A8BED6;
   left: 30px;
-  z-index: 0;
+  z-index: 9;
 }
 
 .fr_avatar {
@@ -65,11 +86,11 @@
   margin-left: -35px;
 }
 
-.users {
+.Fr_users {
   padding-top: 30px;
   margin-left: 50px;
   margin-right: 25px;
-  height: 95px;
+  height: 125px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   position: relative;
 }
@@ -92,4 +113,105 @@
 
 .fr_svg_delete {
   width: 25px;
+}
+
+.chFr_tools div {
+  position: relative;
+  z-index: 16;
+}
+
+.chFr_tools_svg {
+  width: 50px;
+  position: absolute;
+  fill: #A8BED6;
+  z-index: 16;
+}
+
+.chFr_tools_img {
+  position: absolute;
+  z-index: 16;
+}
+
+.svg_chFr_tool1 {
+  top: 40px;
+  left: calc(50% - 25px - 130px);
+}
+
+.svg_chFr_tool2 {
+  top: 70px;
+  left: calc(50% - 25px - 70px);
+}
+
+.svg_chFr_tool3 {
+  top: 80px;
+  left: calc(50% - 25px);
+}
+
+.svg_chFr_tool4 {
+  top: 70px;
+  left: calc(50% - 25px + 70px);
+}
+
+.svg_chFr_tool5 {
+  top: 40px;
+  left: calc(50% - 25px + 130px);
+}
+
+.img_chFr_tool4 {
+  left: calc(50% - 12px + 70px);
+  top: 80px;
+  height: 28px;
+}
+
+.img_chFr_tool5 {
+  left: calc(50% - 14px + 130px);
+  top: 51px;
+  width: 28px;
+}
+
+.img_chFr_tool1 {
+  left: calc(50% - 13px - 130px);
+  top: 50px;
+  height: 28px;
+}
+
+.img_chFr_tool2 {
+  left: calc(50% - 10px - 70px);
+  top: 80px;
+  height: 28px;
+}
+
+.img_chFr_tool3 {
+  left: calc(50% - 14px);
+  top: 90px;
+  height: 28px;
+}
+
+.Fr_tochat {
+  width: 16px;
+  margin-left: 5px;
+  margin-bottom: 3px;
+}
+
+.chFr_search {
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 88px);
+  z-index: 20;
+}
+
+.chFr_search input {
+  border-radius: 100px;
+  border: none;
+  z-index: 20;
+}
+
+.chFr_search .ant-input-suffix {
+  left: -35px;
+}
+
+.chFr_search svg {
+  fill: white;
+  width: 32px;
+  height: 32px;
 }

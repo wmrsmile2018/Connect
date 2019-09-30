@@ -3,9 +3,7 @@ import './Connect.css';
 import Circle from './user_pages/Circle/index';
 import Wall from './user_pages/Users_wall/index';
 
-
 import Chats_friend from './chats_friends/index'
-
 
 const User_pages = () => {
   return (
@@ -25,6 +23,7 @@ const Connect = () => {
     </div>
   );
 }
+
 export default Connect;
 
 
